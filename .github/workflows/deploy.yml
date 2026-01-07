@@ -24,4 +24,6 @@ jobs:
         run: aws --version
 
       - name: Sync site to S3
-        run: aws s3 sync . s3://${{ secrets.S3_BUCKET }} --delete --exclude ".git/*" --exclude ".github/*"
+        shell: bash
+        run: |
+          aws s3 sync . "s3://${{ secrets.S3_BUCKET }}" --delete --exclude ".git/*" --exclude ".github/*"
