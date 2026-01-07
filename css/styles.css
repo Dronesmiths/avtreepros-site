@@ -1,49 +1,123 @@
-body {
+/* ================================
+   AV TREE PROS — BASE STYLES
+   ================================ */
+
+/* RESET / NORMALIZE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f4f7f9;
-  color: #222;
-  text-align: center;
-  padding: 60px 20px;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #0f3d2e;
+/* ROOT VARIABLES (easy theming later) */
+:root {
+  --primary: #1f7a3a;
+  --secondary: #145a32;
+  --accent: #f4c430;
+  --dark: #1c1c1c;
+  --light: #f9f9f9;
+  --text: #333;
+  --max-width: 1100px;
 }
 
-p {
-  font-size: 1.2rem;
+/* BASE */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: var(--light);
+  color: var(--text);
   line-height: 1.6;
 }
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f6f8fa;
-  color: #222;
+
+/* CONTAINER */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 1.25rem;
 }
 
-header {
-  background: #0f3d2e;
-  color: white;
-  padding: 40px;
-  text-align: center;
-}
-
-section {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.25;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 0.75rem;
 }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+  color: white;
+  padding: 5rem 1.25rem;
+  text-align: center;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0.75rem auto 0;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.75rem;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+section {
+  padding: 4rem 0;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark);
+  color: #ccc;
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3.5rem 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
