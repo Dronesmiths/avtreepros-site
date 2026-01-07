@@ -1,37 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AV Tree Pros | Antelope Valley Tree Services</title>
 
-  <!-- Base Styles -->
-  <link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Tree Pros | Premium Tree Services & Lawn Care in Antelope Valley</title>
+    <meta name="description"
+        content="The Antelope Valley's #1 choice for professional landscaping. Reliable lawn mowing, yard cleanup, and garden maintenance in Palmdale, Lancaster, and Quartz Hill. No contracts, zero hassle.">
+
+    <!-- Schema Markup for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LandscapingOrGardenStore",
+      "name": "AV Tree Pros",
+      "image": "https://avtreepros-site.com/images/service-mowing.png",
+      "description": "Premium landscaping and recurring lawn mowing services in the Antelope Valley. Serving Palmdale, Lancaster, and surrounding areas.",
+      "telephone": "(555) 555-5555",
+      "url": "https://avtreepros-site.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palmdale",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "34.5794",
+        "longitude": "-118.1165"
+      },
+      "areaServed": ["Antelope Valley", "Lancaster", "Palmdale", "Quartz Hill", "Rosamond"],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.6">
 </head>
+
 <body>
 
-  <header class="hero">
-    <div class="container">
-      <h1>AV Tree Pros</h1>
-      <p>Professional Tree Trimming & Removal in the Antelope Valley</p>
-      <a href="#services" class="btn">Get a Free Estimate</a>
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo">AV Tree <span>Pros</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:5555555555" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (555) 555-5555</a>
+                <a href="/contact/" class="btn btn-primary">Get a Quote</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
 
-  <main class="container">
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>
-        We provide professional, safe, and affordable tree services
-        throughout the Antelope Valley.
-      </p>
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Premium Tree & Yard Care for the Antelope Valley</h1>
+            <p>Reliable, professional landscaping and lawn mowing services tailored for Palmdale and Lancaster
+                homeowners. We make a pristine yard effortless.</p>
+            <div class="hero-btns">
+                <a href="/contact/" class="btn btn-primary">Get a Free Estimate</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2026 AV Tree Pros. All rights reserved.</p>
-  </footer>
+    <!-- 2. The AV Tree Pros Difference -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>The #1 Choice for High Desert Tree Services</h2>
+                <p>We combine premium results with local reliability to provide the best yard care in the valley.</p>
+            </div>
+            <div class="features-grid grid-balance-4">
+                <div class="feature-card">
+                    <i class="fas fa-calendar-check feature-icon"></i>
+                    <h3>Reliable scheduling</h3>
+                    <p>We show up on time, every time. No more wondering when your landscaping crew will arrive.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>No Contracts</h3>
+                    <p>We earn your business with every visit. High-quality service with the freedom to cancel anytime.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf feature-icon"></i>
+                    <h3>Desert Experts</h3>
+                    <p>Locals who understand Antelope Valley soil, climate, and specialized desert plant care.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-dollar-sign feature-icon"></i>
+                    <h3>Flat-Rate Pricing</h3>
+                    <p>Transparent quotes with zero hidden fees. You always know exactly what you're paying for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- 3. Services Preview (Luxury Grid) -->
+    <section class="av-explore-section" id="services" style="background: var(--bg-green-tint);">
+        <div class="av-explore-inner">
+            <div class="section-title">
+                <h2>Professional Tree & Yard Services</h2>
+                <p>Everything your Antelope Valley property needs to look its absolute best.</p>
+            </div>
+            <div class="av-explore-grid">
+
+                <!-- Professional Tree Care -->
+                <a href="/services/tree-care/" class="av-explore-card">
+                    <img src="images/service-mowing.png" alt="Professional Tree Care Palmdale">
+                    <div class="av-explore-overlay">
+                        <h3>Professional Tree Care</h3>
+                        <p>Consistent weekly or bi-weekly care with professional edging and cleanup.</p>
+                        <div class="av-explore-link">View Service</div>
+                    </div>
+                </a>
+
+                <!-- Emergency Tree Services -->
+                <a href="/services/emergency-service/" class="av-explore-card">
+                    <img src="images/service-cleanup.png" alt="Emergency Tree Services Lancaster">
+                    <div class="av-explore-overlay">
+                        <h3>Emergency Tree Services</h3>
+                        <p>Complete restoration, mass weed removal, and seasonal debris clearing.</p>
+                        <div class="av-explore-link">View Service</div>
+                    </div>
+                </a>
+
+                <!-- Palm Tree Trimming -->
+                <a href="/services/palm-trimming/" class="av-explore-card">
+                    <img src="images/service-garden.png" alt="Desert Palm Tree Trimming Antelope Valley">
+                    <div class="av-explore-overlay">
+                        <h3>Palm Tree Trimming</h3>
+                        <p>Specialized maintenance for desert plants, succulents, and High Desert xeriscapes.</p>
+                        <div class="av-explore-link">View Service</div>
+                    </div>
+                </a>
+
+                <!-- Irrigation -->
+                <a href="/services/stump-grinding/" class="av-explore-card">
+                    <img src="images/service-irrigation.png" alt="Stump Grinding Palmdale">
+                    <div class="av-explore-overlay">
+                        <h3>Stump Grinding</h3>
+                        <p>Expert drip system repairs, sprinkler tuning, and water efficiency upgrades.</p>
+                        <div class="av-explore-link">View Service</div>
+                    </div>
+                </a>
+
+                <!-- Tree Trimming -->
+                <a href="/services/tree-trimming/" class="av-explore-card">
+                    <img src="images/service-tree.png" alt="Tree Trimming Lancaster">
+                    <div class="av-explore-overlay">
+                        <h3>Tree Trimming</h3>
+                        <p>Professional structural pruning, canopy thinning, and ornamental tree care.</p>
+                        <div class="av-explore-link">View Service</div>
+                    </div>
+                </a>
+
+                <!-- Tree Removal -->
+                <a href="/services/tree-removal/" class="av-explore-card">
+                    <img src="images/service-hardscape.png" alt="Tree Removal Quartz Hill">
+                    <div class="av-explore-overlay">
+                        <h3>Tree Removal</h3>
+                        <p>Luxury paver walkways, decorative stone, and landscape border installations.</p>
+                        <div class="av-explore-link">View Service</div>
+                    </div>
+                </a>
+
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="/services/" class="btn btn-primary" style="padding: 16px 50px;">View All Service Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Meet the Owner -->
+    <section class="av-palmdale-tech">
+        <h2>Your Local Antelope Valley Yard Specialist</h2>
+        <p class="av-palmdale-tech-intro">
+            Consistent quality starts with an owner who cares. At AV Tree Pros, your property is in professional hands,
+            every single visit.
+        </p>
+
+        <div class="av-palmdale-tech-grid">
+            <!-- IMAGE -->
+            <div class="av-palmdale-tech-photo">
+                <img src="images/brian-yard-care.png" alt="Brian, owner of AV Tree Pros and landscaping specialist">
+            </div>
+
+            <!-- TEXT -->
+            <div>
+                <div class="av-palmdale-tech-quote">
+                    “Hi, I’m Brian — and I personally guarantee that your yard will be the easiest thing you deal with
+                    all week.”
+                </div>
+
+                <div class="av-palmdale-tech-copy">
+                    Homeowners across Palmdale and Lancaster choose AV Tree Pros because they want
+                    <strong>reliability and honesty</strong>. We don't just cut grass; we maintain the value and
+                    beauty of your home with a detail-driven approach that is rare in the High Desert.
+                </div>
+
+                <div class="av-palmdale-tech-points">
+                    <div class="av-palmdale-tech-point"><span>✔</span> Locally owned and owner-operated</div>
+                    <div class="av-palmdale-tech-point"><span>✔</span> Direct communication with your specialist</div>
+                    <div class="av-palmdale-tech-point"><span>✔</span> Detail-driven results you can see instantly</div>
+                </div>
+
+                <a href="tel:5555555555" class="av-palmdale-tech-cta">
+                    Call Brian — Start Your Service
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Visual Proof (Before & After) -->
+    <section class="av-yard-ba" style="background: #fff;">
+        <div class="av-yard-ba-inner">
+            <h2>Real Results in the High Desert</h2>
+            <p class="av-yard-ba-lead">
+                From wind-blown debris and overgrown lots to pristine residential lawns—see how our professional yard
+                work transforms Antelope Valley properties.
+            </p>
+
+            <!-- INTERACTION INSTRUCTION -->
+            <div class="av-yard-ba-instruction">
+                <span class="av-yard-ba-icon">⇆</span>
+                <span>Drag the slider to compare</span>
+            </div>
+
+            <!-- FRAME -->
+            <div class="av-yard-ba-frame">
+                <div class="av-yard-ba-slider">
+                    <!-- BEFORE -->
+                    <img src="https://avpoolcleaning.com/wp-content/uploads/2026/01/AV-Yard-Services-Before-1.webp"
+                        alt="High Desert yard before professional cleanup" class="av-yard-before">
+
+                    <!-- AFTER -->
+                    <img src="https://avpoolcleaning.com/wp-content/uploads/2026/01/AV-Yard-Services-After-1.webp"
+                        alt="High Desert yard after professional AV Tree Pros cleanup" class="av-yard-after">
+
+                    <input type="range" min="0" max="100" value="50" class="av-yard-range">
+
+                    <div class="av-yard-divider"></div>
+                    <div class="av-yard-handle">⇆</div>
+
+                    <div class="av-yard-pill av-yard-before-pill">Before</div>
+                    <div class="av-yard-pill av-yard-after-pill">After</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimonials (Luxury Track) -->
+    <section class="av-palmdale-testimonials">
+        <h2>What Your Neighbors Are Saying</h2>
+        <p class="av-palmdale-intro">
+            Trusted by hundreds of homeowners in Palmdale, Lancaster, and Quartz Hill for consistent, professional care.
+        </p>
+
+        <div class="av-palmdale-review-viewport">
+            <div class="av-palmdale-review-track">
+                <!-- Card 1 -->
+                <div class="av-palmdale-review-card">
+                    <div class="av-palmdale-review-head">
+                        <div class="av-palmdale-review-icon">✓</div>
+                        <div>
+                            <strong>Amanda R.</strong><br>
+                            <small>West Palmdale</small>
+                        </div>
+                    </div>
+                    <p>“They show up every week on time. Our lawn stays green and perfectly manicured. Best yard service
+                        in the AV.”</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="av-palmdale-review-card">
+                    <div class="av-palmdale-review-head">
+                        <div class="av-palmdale-review-icon">✓</div>
+                        <div>
+                            <strong>Daniel M.</strong><br>
+                            <small>Lancaster</small>
+                        </div>
+                    </div>
+                    <p>“Truly professional and reliable. They handled our irrigation repairs and a full cleanup fast.
+                        Highly recommend!”</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="av-palmdale-review-card">
+                    <div class="av-palmdale-review-head">
+                        <div class="av-palmdale-review-icon">✓</div>
+                        <div>
+                            <strong>Samantha K.</strong><br>
+                            <small>Quartz Hill</small>
+                        </div>
+                    </div>
+                    <p>“Professional service and great communication. The best landscaping company in Quartz Hill, hands
+                        down.”</p>
+                </div>
+
+                <!-- Duplicate for loop -->
+                <div class="av-palmdale-review-card">
+                    <div class="av-palmdale-review-head">
+                        <div class="av-palmdale-review-icon">✓</div>
+                        <div>
+                            <strong>Amanda R.</strong><br>
+                            <small>West Palmdale</small>
+                        </div>
+                    </div>
+                    <p>“They show up every week on time. Our lawn stays green and perfectly manicured. Best yard service
+                        in the AV.”</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="av-palmdale-review-cta">
+            <a href="tel:5555555555">Get a Quote from the Experts</a>
+        </div>
+    </section>
+
+    <!-- 7. Service Area -->
+    <section class="av-palmdale-service-area">
+        <div class="av-palmdale-inner">
+            <h2>Serving All Antelope Valley Neighborhoods</h2>
+            <p class="av-palmdale-intro">
+                We provide premium yard maintenance and recurring lawn services to homeowners throughout the High Desert
+                region.
+            </p>
+
+            <div class="av-palmdale-area-grid">
+                <!-- MAP -->
+                <div class="av-palmdale-card" style="padding: 0; overflow: hidden; height: 400px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104689.87329582846!2d-118.21634848358485!3d34.69532822452296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c25a075e7aee29%3A0xe67b40742d4a13d7!2sAntelope%20Valley%2C%20California!5e0!3m2!1sen!2sus!4v1703112345678!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- CITIES -->
+                <div class="av-palmdale-card">
+                    <h3>Communities We Support</h3>
+                    <ul class="av-palmdale-area-list">
+                        <li>Palmdale, CA</li>
+                        <li>Lancaster, CA</li>
+                        <li>Quartz Hill</li>
+                        <li>Westside Palmdale</li>
+                        <li>Eastside Lancaster</li>
+                        <li>Rosamond</li>
+                        <li>Lake Los Angeles</li>
+                        <li>Littlerock</li>
+                        <li>Pearblossom</li>
+                        <li>Sun Village</li>
+                    </ul>
+
+                    <p style="margin-top:22px; font-size:15.5px; color:var(--text-light); text-align:center;">
+                        Don’t see your area listed?<br>
+                        <strong>Call us—we likely serve your neighborhood.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="av-palmdale-area-cta">
+                <a href="tel:5555555555">Check Weekly Route Availability</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Pricing Preview -->
+    <section class="av-pricing-section">
+        <div class="av-pricing-inner">
+            <h2>Straightforward Yard Care Pricing</h2>
+            <p class="av-pricing-intro">
+                Fair, transparent pricing with zero surprise fees. High-quality yard maintenance fit for every Antelope
+                Valley budget.
+            </p>
+
+            <div class="av-pricing-grid">
+                <!-- Weekly Maintenance -->
+                <div class="av-pricing-card">
+                    <h3>Residential Mowing</h3>
+                    <p class="av-pricing-price">$99 <span>/month+</span></p>
+                    <p class="av-pricing-desc">The perfect solution for a baseline healthy, green, and manicured yard.
+                    </p>
+                    <ul class="av-pricing-features">
+                        <li>Weekly or Bi-Weekly Visits</li>
+                        <li>Precision Mowing & Edging</li>
+                        <li>Blowing & Hard Surface Cleanup</li>
+                        <li>Guaranteed Service Date</li>
+                    </ul>
+                    <a href="tel:5555555555" class="av-pricing-cta">Get Started</a>
+                </div>
+
+                <!-- Full Maintenance -->
+                <div class="av-pricing-card featured">
+                    <span class="av-pricing-badge">Best Value</span>
+                    <h3>Premium Maintenance</h3>
+                    <p class="av-pricing-price">$199 <span>/month</span></p>
+                    <p class="av-pricing-desc">The ultimate hands-off solution for total property pride and consistency.
+                    </p>
+                    <ul class="av-pricing-features">
+                        <li>Full Lawn & Palm Tree Trimming</li>
+                        <li>Proactive Weed Control</li>
+                        <li>Detailed Bush/Shrub Shaping</li>
+                        <li>Priority Project Scheduling</li>
+                    </ul>
+                    <a href="tel:5555555555" class="av-pricing-cta">Get an Estimate</a>
+                </div>
+
+                <!-- Cleanup -->
+                <div class="av-pricing-card">
+                    <h3>Yard Reset/Cleanup</h3>
+                    <p class="av-pricing-price">$149 <span>+</span></p>
+                    <p class="av-pricing-desc">The fast-track to regaining control of an overgrown or neglected yard.
+                    </p>
+                    <ul class="av-pricing-features">
+                        <li>Intensive Weed Removal</li>
+                        <li>Structural Pruning</li>
+                        <li>Full Debris Hauling</li>
+                        <li>Fast Same-Week Booking</li>
+                    </ul>
+                    <a href="tel:5555555555" class="av-pricing-cta">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="avyard-faq" style="background: var(--bg-green-tint);">
+        <div class="avyard-faq-inner">
+            <h2>Antelope Valley Yard Care: FAQ</h2>
+            <p class="avyard-faq-lead">
+                Find expert answers to common questions about keeping your High Desert property in top shape.
+            </p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do you service Lancaster and Palmdale?</h3>
+                    <p>Yes. We provide full landscaping and maintenance services throughout the entire Antelope Valley
+                        region, including specific neighborhood coverage for both major cities.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is there a contract required for recurring service?</h3>
+                    <p>Never. We believe in earning your business with every visit. You can pause or cancel your
+                        recurring yard maintenance at any time with no penalty.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens if I have heavy weeds?</h3>
+                    <p>For overgrown yards, we typically perform a one-time "Reset" service to restore the property
+                        level
+                        before transitioning you to a standard, affordable weekly maintenance schedule.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you handle irrigation repairs?</h3>
+                    <p>We do. We specialize in High Desert irrigation solutions, fixing drip systems and sprinkler heads
+                        to maximize water efficiency during our harsh summers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I get a quote for my yard?</h3>
+                    <p>Simply call or text us at (555) 555-5555. We can often provide an estimate the same day based on
+                        your property size and service needs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is included in a standard mow?</h3>
+                    <p>A standard visit includes professional mowing of all grass areas, vertical edging of driveways
+                        and walkways, and a full blow-off of all hard surfaces.</p>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <a href="tel:5555555555" class="btn btn-primary"
+                    style="padding: 16px 40px; font-size: 1.1rem; border: 3px solid var(--primary-gold);">
+                    Contact Us for a Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+
+            <!-- Brand -->
+            <div class="aw-footer-brand">
+                <h3>AV Tree <span>Pros</span></h3>
+                <p>Your trusted local landscaping partner in the Antelope Valley.</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="aw-footer-contact">
+                <p class="aw-footer-phone">
+                    <span>📞</span>
+                    <a href="tel:15555555555">(555) 555-5555</a>
+                </p>
+                <p class="aw-footer-email">
+                    Professional yard care for Palmdale, Lancaster & the High Desert
+                </p>
+            </div>
+
+            <!-- Services -->
+            <div class="aw-footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="/services/tree-care/">Professional Tree Care</a></li>
+                    <li><a href="/services/emergency-service/">Emergency Tree Services</a></li>
+                    <li><a href="/services/palm-trimming/">Palm Tree Trimming</a></li>
+                    <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+                    <li><a href="/services/tree-trimming/">Tree Trimming</a></li>
+                    <li><a href="/services/tree-removal/">Tree Removal</a></li>
+                </ul>
+            </div>
+
+            <!-- Locations -->
+            <div class="aw-footer-locations">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li><a href="/locations/palmdale/">Palmdale, CA</a></li>
+                    <li><a href="/locations/lancaster/">Lancaster, CA</a></li>
+                    <li><a href="/locations/quartz-hill/">Quartz Hill</a></li>
+                    <li><a href="/locations/rosamond/">Rosamond</a></li>
+                    <li><a href="/locations/lake-los-angeles/">Lake Los Angeles</a></li>
+                    <li><a href="/locations/littlerock/">Littlerock</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="aw-footer-bottom">
+            <p>© <span id="year"></span> AV Tree Pros. All rights reserved. | Serving the Antelope Valley with pride.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
