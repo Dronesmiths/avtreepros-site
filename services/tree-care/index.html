@@ -8,6 +8,62 @@
     <meta name="description"
         content="Expert tree health care and maintenance for homeowners in Palmdale, Lancaster, and the Antelope Valley. Disease management, fertilization, and regular tree inspections.">
 
+    <!-- Service Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tree Health Care",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "AV Tree Pros",
+        "telephone": "(661) 498-4444",
+        "url": "https://avtreepros.com"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Palmdale"},
+        {"@type": "City", "name": "Lancaster"},
+        {"@type": "City", "name": "Quartz Hill"},
+        {"@type": "City", "name": "Antelope Valley"}
+      ],
+      "description": "Expert tree health care and maintenance including disease management, fertilization, and regular tree inspections."
+    }
+    </script>
+
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if my tree is sick?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for signs like discolored leaves, premature leaf drop, dead branches, or visible fungus/pests. If you're unsure, our health assessment can provide answers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I fertilize my trees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most trees in the AV benefit from deep root fertilization once or twice a year, typically in spring or fall, to support growth and root health."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you save a dying tree?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the cause and severity. Many stress factors can be reversed with proper care, but some advanced diseases may require removal. Early detection is key."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +110,8 @@
     </header>
 
     <!-- 1. Hero / Introduction -->
-    <section class="hero" id="home" style="background-image: linear-gradient(rgba(0, 80, 40, 0.85), rgba(0, 113, 61, 0.7)), url('/images/service-tree-care.png');">
+    <section class="hero" id="home"
+        style="background-image: linear-gradient(rgba(0, 80, 40, 0.85), rgba(0, 113, 61, 0.7)), url('/images/service-tree-care.png');">
         <div class="container">
             <h1>Professional Tree Health & Maintenance in the Antelope Valley</h1>
             <p>Proactive tree care tailored for the High Desert climate. We provide disease management, fertilization,
@@ -164,8 +221,7 @@
         <div class="av-palmdale-tech-grid">
             <!-- IMAGE -->
             <div class="av-palmdale-tech-photo">
-                <img src="/images/brian-yard-care.png"
-                    alt="Brian, local Palmdale tree specialist with AV Tree Pros">
+                <img src="/images/brian-yard-care.png" alt="Brian, local Palmdale tree specialist with AV Tree Pros">
             </div>
 
             <!-- TEXT -->
@@ -242,7 +298,7 @@
                     <p>“Professional and honest. They told me my pine tree was healthy and didn't need expensive work,
                         just some mulch.”</p>
                 </div>
-            
+
                 <!-- Duplicates for loop -->
 
                 <!-- Card 1 -->

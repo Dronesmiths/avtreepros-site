@@ -14,7 +14,8 @@
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "AV Tree Pros",
-      "image": "https://avtreepros.com/images/service-tree-trimming.webp",
+      "image": "https://avtreepros.com/images/logo.webp",
+      "logo": "https://avtreepros.com/images/logo.webp",
       "description": "Professional tree services including trimming, removal, and health care in the Antelope Valley. Serving Palmdale, Lancaster, and surrounding areas.",
       "telephone": "(661) 498-4444",
       "url": "https://avtreepros.com",
@@ -29,8 +30,74 @@
         "latitude": "34.5794",
         "longitude": "-118.1165"
       },
-      "areaServed": ["Antelope Valley", "Lancaster", "Palmdale", "Quartz Hill", "Rosamond"],
+      "areaServed": [
+        {"@type": "City", "name": "Antelope Valley"},
+        {"@type": "City", "name": "Lancaster"},
+        {"@type": "City", "name": "Palmdale"},
+        {"@type": "City", "name": "Quartz Hill"},
+        {"@type": "City", "name": "Rosamond"},
+        {"@type": "City", "name": "Lake Los Angeles"},
+        {"@type": "City", "name": "Littlerock"}
+      ],
       "priceRange": "$$"
+    }
+    </script>
+
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does tree trimming cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the size, type, and condition of the tree. We offer free, detailed estimates so you know exactly what to expect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you remove stumps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Stump grinding is a common add-on to our removal services, or it can be done as a standalone service for old stumps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work on palm trees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We specialize in palm tree trimming and skinning to give them a clean, professional look and reduce fire hazards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is your crew insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AV Tree Pros is fully insured for liability. We take safety seriously to protect your property and our team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle emergency work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we have a 24/7 response team for storm damage, fallen limbs, and other immediate tree hazards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you serve my area?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve the entire Antelope Valley, including Palmdale, Lancaster, Quartz Hill, Rosamond, and Littlerock."
+          }
+        }
+      ]
     }
     </script>
 
