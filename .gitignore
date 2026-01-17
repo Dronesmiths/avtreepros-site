@@ -1,4 +1,24 @@
+# System Files
 .DS_Store
-.env
-node_modules
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+.env.local
