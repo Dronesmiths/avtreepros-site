@@ -2173,3 +2173,48 @@ footer {
     color: var(--accent-yellow);
     text-decoration: underline;
 }
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 15px 0;
+    background: var(--bg-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-nav {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-nav a:hover {
+    color: var(--primary-green);
+}
+
+.breadcrumb-nav .separator {
+    color: var(--text-light);
+    opacity: 0.5;
+    margin: 0 5px;
+}
+
+.breadcrumb-nav .current {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        font-size: 0.85rem;
+    }
+}
