@@ -114,19 +114,19 @@ header .container {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--primary-green);
+    display: flex;
+    align-items: center;
     z-index: 1001;
-    /* Border effect for better visibility */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.logo span {
-    color: var(--accent-yellow);
-    /* Ensure the border effect applies here too, inheriting or reinforcing */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+.logo-img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
 }
 
 /* Desktop Navigation */
