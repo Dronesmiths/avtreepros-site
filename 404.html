@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | AV Tree Pros</title>
+    <meta name="description" content="The page you're looking for doesn't exist.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .error-container {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: 800;
+            color: var(--primary-green);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .error-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .error-message {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+
+        .error-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo">AV Tree <span>Pros</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:6614984444" class="phone-link mobile-hide"><i class="fas fa-phone"></i> (661) 498-4444</a>
+                <a href="/contact/" class="btn btn-primary">Get a Quote</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Error Content -->
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-message">
+            Oops! The page you're looking for seems to have wandered off like a tumbleweed in the High Desert.
+        </p>
+        <div class="error-links">
+            <a href="/" class="btn btn-primary">Go Home</a>
+            <a href="/services/" class="btn btn-secondary">View Services</a>
+            <a href="/contact/" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="aw-footer">
+        <div class="container aw-footer-inner">
+
+            <!-- Brand -->
+            <div class="aw-footer-brand">
+                <h3>AV Tree <span>Pros</span></h3>
+                <p>Your trusted local tree service partner in the Antelope Valley.</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="aw-footer-contact">
+                <p class="aw-footer-phone">
+                    <span>📞</span>
+                    <a href="tel:6614984444">(661) 498-4444</a>
+                </p>
+                <p class="aw-footer-email">
+                    Professional tree services for Palmdale, Lancaster & the High Desert
+                </p>
+            </div>
+
+            <!-- Services -->
+            <div class="aw-footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="/services/tree-care/">Professional Tree Care</a></li>
+                    <li><a href="/services/emergency-service/">Emergency Tree Services</a></li>
+                    <li><a href="/services/palm-trimming/">Palm Tree Trimming</a></li>
+                    <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+                    <li><a href="/services/tree-trimming/">Tree Trimming</a></li>
+                    <li><a href="/services/tree-removal/">Tree Removal</a></li>
+                </ul>
+            </div>
+
+            <!-- Locations -->
+            <div class="aw-footer-locations">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li><a href="/locations/palmdale/">Palmdale, CA</a></li>
+                    <li><a href="/locations/lancaster/">Lancaster, CA</a></li>
+                    <li><a href="/locations/quartz-hill/">Quartz Hill</a></li>
+                    <li><a href="/locations/rosamond/">Rosamond</a></li>
+                    <li><a href="/locations/lake-los-angeles/">Lake Los Angeles</a></li>
+                    <li><a href="/locations/littlerock/">Littlerock</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="aw-footer-bottom">
+            <p>© <span id="year"></span> AV Tree Pros. All rights reserved. | Serving the Antelope Valley with pride.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

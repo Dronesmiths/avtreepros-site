@@ -23,7 +23,62 @@ jobs:
       - name: Verify AWS CLI
         run: aws --version
 
-      - name: Sync site to S3
-        shell: bash
+      - name: Upload images and static assets
         run: |
-          aws s3 sync . "s3://${{ secrets.S3_BUCKET }}" --delete --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync ./images s3://${{ secrets.S3_BUCKET }}/images \
+            --cache-control "public, max-age=31536000" \
+            --delete
+
+      - name: Upload CSS files
+        run: |
+          aws s3 sync ./css s3://${{ secrets.S3_BUCKET }}/css \
+            --cache-control "public, max-age=86400" \
+            --delete
+
+      - name: Upload JavaScript files
+        run: |
+          aws s3 sync ./js s3://${{ secrets.S3_BUCKET }}/js \
+            --cache-control "public, max-age=86400" \
+            --delete
+
+      - name: Upload HTML files
+        run: |
+          # Root HTML files
+          aws s3 sync . s3://${{ secrets.S3_BUCKET }} \
+            --exclude "*" \
+            --include "*.html" \
+            --cache-control "public, max-age=3600" \
+            --delete
+          
+          # Services pages
+          aws s3 sync ./services s3://${{ secrets.S3_BUCKET }}/services \
+            --cache-control "public, max-age=3600" \
+            --delete
+          
+          # Location pages
+          aws s3 sync ./locations s3://${{ secrets.S3_BUCKET }}/locations \
+            --cache-control "public, max-age=3600" \
+            --delete
+          
+          # About page
+          aws s3 sync ./about s3://${{ secrets.S3_BUCKET }}/about \
+            --cache-control "public, max-age=3600" \
+            --delete
+          
+          # Contact page
+          aws s3 sync ./contact s3://${{ secrets.S3_BUCKET }}/contact \
+            --cache-control "public, max-age=3600" \
+            --delete
+
+      - name: Invalidate CloudFront cache
+        if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
+
+      - name: Deployment summary
+        run: |
+          echo "✅ Deployment completed successfully!"
+          echo "🌐 Site: https://avtreepros.com"
+          echo "⏰ CloudFront cache invalidation in progress (5-15 minutes)"
