@@ -2156,3 +2156,20 @@ footer {
         height: 280px;
     }
 }
+/* Footer Legal Links */
+.aw-footer-legal {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.aw-footer-legal a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.aw-footer-legal a:hover {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+}
