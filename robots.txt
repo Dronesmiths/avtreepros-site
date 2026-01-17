@@ -1,0 +1,14 @@
+# Robots.txt for AV Tree Pros
+# This file tells search engines which pages to crawl
+
+User-agent: *
+Allow: /
+
+# Disallow crawling of system files
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /.gemini/
+
+# Sitemap location
+Sitemap: https://avtreepros.com/sitemap.xml
